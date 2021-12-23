@@ -1,0 +1,8 @@
+<h1>Seja bem-vindo <%= @name&.capitalize%></h1>
+<p><strong>Hoje é:</strong> <%= date_br Date.today %></p>
+
+<%= render "shared/menu" %>
+
+<p>Você esta acessando o ambiente de <strong><%= ambiente_rails %></strong></p>
+
+<p>Parâmetros: <strong><%= @id %></strong></p>

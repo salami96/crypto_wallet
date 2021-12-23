@@ -1,4 +1,8 @@
+<h1><%= @coin.description %></h1>
+
 <p id="notice"><%= notice %></p>
+
+<%= render "shared/menu" %>
 
 <p>
   <strong>Description:</strong>
@@ -11,9 +15,9 @@
 </p>
 
 <p>
-  <strong>Url image:</strong>
-  <%= @coin.url_image %>
+  <strong>imagem:</strong>
+  <%= image_tag @coin.url_image, width: 50, height: 50 %>
 </p>
 
-<%= link_to 'Edit', edit_coin_path(@coin) %> |
-<%= link_to 'Back', coins_path %>
+<%= link_to 'Editar', edit_coin_path(@coin) %> |
+<%= link_to 'Voltar', coins_path %>
