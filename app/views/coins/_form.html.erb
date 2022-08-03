@@ -27,6 +27,11 @@
     <%= image_tag coin.url_image, width: 50, height: 50 if coin.url_image.present? %>
   </div>
 
+  <div class="field">
+    <%= form.label :mining_type %>
+    <%= form.select :mining_type, MiningType.all.pluck(:acronym) %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
