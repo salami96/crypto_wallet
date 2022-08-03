@@ -19,5 +19,10 @@
   <%= image_tag @coin.url_image, width: 50, height: 50 %>
 </p>
 
+<p>
+  <strong>Sigla do tipo de mineração:</strong>
+  <%= @coin.mining_type&.acronym || "Nenhuma selecionada" %>
+</p>
+
 <%= link_to 'Editar', edit_coin_path(@coin) %> |
 <%= link_to 'Voltar', coins_path %>
