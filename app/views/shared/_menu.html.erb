@@ -1,5 +1,10 @@
+<p>
+  <% I18n.available_locales.each do |loc| %>
+    <%= link_to I18n.backend.translations[loc.to_sym][:flag], root_path(locale: loc) %>
+  <% end %>
+</p>
 <ul>
-  <li><%= link_to "Início", root_path %></li>
-  <li><%= link_to "Moedas virtuais", coins_path %></li>
-  <li><%= link_to "Tipos de mineração", mining_types_path %></li>
+  <li><%= link_to t("links.home"), root_path %></li>
+  <li><%= link_to Coin.model_name.human(count: 2), coins_path %></li>
+  <li><%= link_to MiningType.model_name.human(count: 2), mining_types_path %></li>
 </ul>

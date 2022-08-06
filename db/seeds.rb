@@ -9,7 +9,7 @@ require 'tty-spinner'
 #   Character.create(name: 'Luke', movie: movies.first)
 
 [
-    { description: "Não se aplica", acronym: "N/a" },
+    { description: "Not Applicable", acronym: "N/a" },
     { description: "Proof of Work", acronym: "PoW" },
     { description: "Proof of Stake", acronym: "PoS" },
     { description: "Proof of Capacity", acronym: "PoC" },

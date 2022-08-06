@@ -5,24 +5,24 @@
 <%= render "shared/menu" %>
 
 <p>
-  <strong>Descrição:</strong>
+  <strong><%= Coin.human_attribute_name(:description) %>:</strong>
   <%= @coin.description %>
 </p>
 
 <p>
-  <strong>Sigla:</strong>
+  <strong><%= Coin.human_attribute_name(:acronym) %>:</strong>
   <%= @coin.acronym %>
 </p>
 
 <p>
-  <strong>Simbolo:</strong>
+  <strong><%= Coin.human_attribute_name(:image) %>:</strong>
   <%= image_tag @coin.url_image, width: 50, height: 50 %>
 </p>
 
 <p>
-  <strong>Sigla do tipo de mineração:</strong>
-  <%= @coin.mining_type&.acronym || "Nenhuma selecionada" %>
+  <strong><%= Coin.human_attribute_name(:mining_type) %>:</strong>
+  <%= @coin.mining_type&.acronym || t("text.none_selected") %>
 </p>
 
-<%= link_to 'Editar', edit_coin_path(@coin) %> |
-<%= link_to 'Voltar', coins_path %>
+<%= link_to t('links.edit'), edit_coin_path(@coin) %> |
+<%= link_to t('links.back'), coins_path %>

@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
     @id = params
-    @name = params[:name]
+    session[:name] = params[:name] if params[:name].present?
   end
 end

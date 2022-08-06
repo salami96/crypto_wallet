@@ -1,7 +1,4 @@
 module ApplicationHelper
-  def date_br(date)
-    date.strftime "%d/%m/%Y"
-  end
 
   def ambiente_rails
     case Rails.env

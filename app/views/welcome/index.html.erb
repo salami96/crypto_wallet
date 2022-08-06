@@ -1,7 +1,9 @@
-<h1>Seja bem-vindo <%= @name&.capitalize%></h1>
-<p><strong>Hoje é:</strong> <%= date_br Date.today %></p>
+<h1><%= t('text.hello') %> <%= session[:name]&.capitalize%></h1>
 
 <%= render "shared/menu" %>
+
+<p><%= t('text.language') %>: <strong><%= t('text.locale') %></strong></p>
+<p><strong>Hoje é:</strong> <%= l(Date.today) %></p>
 
 <p>Você esta acessando o ambiente de <strong><%= ambiente_rails %></strong></p>
 

@@ -1,6 +1,8 @@
 <h1>Editing Mining Type</h1>
 
+<%= render "shared/menu" %>
+
 <%= render 'form', mining_type: @mining_type %>
 
-<%= link_to 'Show', @mining_type %> |
-<%= link_to 'Back', mining_types_path %>
+<%= link_to t('link.show'), @mining_type %> |
+<%= link_to t('link.back'), mining_types_path %>

@@ -1,0 +1,37 @@
+pt-BR:
+  flag: 🇧🇷
+  links:
+    new: Novo(a)
+    edit: Editar
+    show: Mostrar
+    delete: Excluir
+    back: Voltar
+    home: Início
+  text:
+    language: Idioma
+    locale: Português do Brasil
+    hello: Olá, seja bem-vindo
+    confirmation: Tem certeza?
+    actions: Ações
+    none_selected: Nenhuma selecionada
+  activerecord:
+    models:
+      coin:
+        one: Moeda
+        other: Moedas
+      mining_type:
+        one: Tipo de Mineração
+        other: Tipos de Mineração
+    attributes:
+      coin:
+        description: Descrição
+        acronym: Sigla
+        url_image: Link da Imagem
+        image: Imagem
+        update_at: Atualizado em
+        created_at: Criado em
+      mining_type:
+        description: Descrição
+        acronym: Sigla
+        update_at: Atualizado em
+        created_at: Criado em
